@@ -1,3 +1,112 @@
 @charset "utf-8";
 /* CSS Document */
+ {
+    box-sizing: border-box;
+  }
+  .header{
+    background-color: #150300;
+    margin: 0px;
+    display: inline-block;
+    width: 100%;
+  }
 
+  .header h1 {
+    font-family: 'Mitr', sans-serif;
+    font-size: 18px;
+    font-weight: 400;
+    color:white;
+    text-decoration: underline;
+    text-align: center;
+    margin-left: 60px;
+    padding: 10px;
+  }
+
+  .nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .nav ul {
+    list-style-type: none;
+  }
+
+  .nav li {
+    display: inline-block;
+    padding: 0;
+    margin-right: 30px;
+  }
+
+  /* unvisited link */
+  .nav a {
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    font-weight: 300;
+    color: white;
+    text-decoration: none;
+  }
+  .nav a:hover{
+    text-decoration: underline;
+    color: white;
+  }
+/* current active page */
+  .nav .active > a{
+    text-decoration: underline;
+    color: white;
+  }
+  .leftside, .rightside{
+    width: 50%;
+    margin-top: 60px;
+  }
+
+ .leftside {
+   text-align: center;
+   float: left;
+ }
+
+ .rightside {
+   text-align: center;
+   float: right;
+ }
+
+  #aboutus {
+    font-family: 'Mitr', sans-serif;
+    font-size: 12px;
+    font-weight: 600;
+    color: #Ec9706;
+  }
+
+  h2 {
+    font-family: 'Marck Script', cursive;
+    font-size: 45px;
+    font-weight: 400;
+    color: #Ec9706;
+    padding: 0;
+    margin-top: 10px;
+    margin-bottom: -20px;
+  }
+  h3 {
+    font-family: 'Archivo Black', sans-serif;
+    font-size: 52px;
+    font-weight: 400;
+    padding: 0;
+    margin: -20px;
+  }
+
+  #star{
+    padding: 0;
+    margin-bottom: -25px;
+  }
+
+  p{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 18px;
+    font-weight: 600;
+    color: #616161;
+  }
+
+  @media screen and (max-width: 600px) {
+    .leftside, .rightside {
+      width: 100%;
+    }
+  }

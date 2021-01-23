@@ -4,49 +4,64 @@
 	<head>
 		<meta charset="UTF-8">
 		<meta name="viewport" content="width=device-width, initial-scale=1.0">
-		<meta name="description" content="This website is a project for web design 2.">
+		<meta name="description" content="The Place, restaurant home page.">
 		<title>HTML5 and CSS</title>
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Marck+Script&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Mitr&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
+		<link href="https://fonts.googleapis.com/css2?family=Archivo+Black&family=Open+Sans:wght@300&display=swap" rel="stylesheet">
 		<link rel = "stylesheet" type = "text/css" href = "style/main.css"/>
 	</head>
 
 <body>
-	<header>
-
-	</header>
 	<main>
 		<section>
-			<header>
-                <nav>
-					<a href="/">Home</a>
-					<a href="/">About Us</a>
-					<a href="/">Menu</a>
-					<a href="/">Delight</a>
-                </nav>
-				<h3>Discover</h3>
-			</header>
+			<div class ="header">
+                <div class="nav">
+					<h1>THE PLACE</h1>
+					<ul>
+						<li class=active><a href="index.html">WELCOME</a></li>
+						<li><a href="aboutus.html">MENU</a></li>
+						<li><a href="menu.html">RESERVATIONS</a></li>
+						<li><a href="delight.html">NEWS</a></li>
+						<li><a href="delight.html">CONTACT</a></li>
+					</ul>
+                </div>
+			</div>
 		</section>
-		<section>
-			<article>
-				<header>
-				<h2>Our Story</h2>
-				</header>
-				<p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Harum blanditiis nisi omnis quae culpa perferendis atque nulla veniam exercitationem? 
-					Ex consectetur amet quas, laboriosam libero repudiandae consequatur eaque molestiae porro!
-				</p>
-				<figure>
-					<img src="assets/our-story.jpg" alt="">
-					<figcaption>
-						Our restaurant
-					</figcaption>
-				</figure>
-			</article>
-		</section>
-		<aside>
-			<a href="/">About Us</a>
-		</aside>
+			<section>
+				<div class="container">
+				<div clas="row">
+					<div class="col ">
+						<div class="leftside">
+						<article>
+							<h2>Discover</h2>
+							<h3>OUR STORY</h3>
+							<figure>
+								<img src="assets/Star.png" id="star" alt="">
+							</figure>
+							<p>Lorem ipsum is placeholder text commonly<br> used in the graphic,
+								print, and publishing<br> industries for previewing layouts and 
+								visual<br> mockups.
+							</p>
+							<a id="aboutus"href="/">ABOUT US</a>
+						</article>
+						</div>
+					</div>
+			</section>
+			<section>
+				<div class="col">
+					<div class="rightside">
+					<figure>
+						<img src="assets/our-story.jpg" alt="">
+					</figure>
+					</div>
+				</div>
+				</div>
+			</div>
+			</section>
 	</main>
-	<footer>
-		Copyright 2021| Designed with love by me
-	</footer>
 </body>
 </html>
