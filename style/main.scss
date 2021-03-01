@@ -1,0 +1,57 @@
+@import "./vendor/normalize";
+@import "./partials/colors";
+@import "./partials/mixins";
+@import "./partials/typography";
+
+header {
+    background: $darker-background;
+    h1 {
+        color: $header-footer-font-color;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        ul {
+            list-style-type: none;
+        }
+        li {
+            display: inline-block;
+            padding: 0;
+            margin-right: 30px;
+        }
+        a {
+            color: $header-footer-font-color;
+        }
+    }
+}
+
+footer {
+    background: $dark-background;
+    color: $header-footer-font-color;
+    display: inline-block;
+    width: 100%;
+    .footerleft, .footerright{
+        margin-top: 20px;
+        margin-bottom: 20px;
+        display: inline-block;
+        width: 50%; 
+    }
+    .footerleft{
+        text-align: center;
+        float: left;
+      }
+      .footerright{
+        text-align: center;
+      }
+}
+
+//Medium Screens and up
+@media(min-width: 768px) {
+
+}
+
+// Big Screens
+@media(min-width: 1024pc) {
+
+}
