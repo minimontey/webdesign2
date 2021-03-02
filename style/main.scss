@@ -3,10 +3,17 @@
 @import "./partials/mixins";
 @import "./partials/typography";
 
-header {
+header{
     background: $darker-background;
     h1 {
+        font-family: $title-font;
         color: $header-footer-font-color;
+        font-size: 18px;
+        font-weight: bold;
+        text-decoration: underline;
+        text-align: center;
+        margin-left: 60px;
+        padding: 10px;
     }
     nav{
         display: flex;
@@ -22,18 +29,76 @@ header {
         }
         a {
             color: $header-footer-font-color;
+            font-size: 14px;
+            font-weight: normal;
+        }
+        a:hover{
+            text-decoration: underline;
+            color: $header-footer-font-color;
+        }
+        /* current active page */
+       .active > a{
+            text-decoration: underline;
+            color: $header-footer-font-color;
         }
     }
 }
 
-footer {
+.leftside, .rightside{
+    width: 50%;
+    margin-top: 60px;
+    padding: 10px;
+    display: inline-block;
+  }
+
+ .leftside{
+   text-align: center;
+   float: left;
+    h2{
+        @include orange-heading();
+        padding: 0;
+        margin-top: 10px;
+    }
+    h3{
+        font-family: $title-font;
+        color: $primary-font-color;
+        font-size: 48px;
+        font-weight: bold;
+        margin: -20px;
+    }
+    #star{
+        padding: 0;
+        margin-bottom: -25px;
+        }
+    p{
+        font-family: $primary-font;
+        color: $primary-font-color;
+        font-size: 24px;
+        text-align: center;
+    }
+    #aboutus{
+        color: $secondary-font-color;
+        font-family: $primary-font;
+        font-size: 14px;
+        font-weight: bold;
+        text-decoration: underline;
+    }
+ }
+
+ .rightside{
+   text-align: center;
+ }
+
+footer{
     background: $dark-background;
+    font-family: $primary-font;
+    font-size: 12px;
     color: $header-footer-font-color;
     display: inline-block;
     width: 100%;
     .footerleft, .footerright{
         margin-top: 20px;
-        margin-bottom: 20px;
+        margin-bottom: 10px;
         display: inline-block;
         width: 50%; 
     }
@@ -47,11 +112,11 @@ footer {
 }
 
 //Medium Screens and up
-@media(min-width: 768px) {
+@media(min-width: 768px){
 
 }
 
 // Big Screens
-@media(min-width: 1024pc) {
+@media(min-width: 1024pc){
 
 }
